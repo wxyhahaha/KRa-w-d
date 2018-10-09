@@ -1,0 +1,260 @@
+body,html,section{
+	width: 100%;
+	height: 100%;
+}
+a.link-btn:hover{
+	color: #fff;
+}
+body{
+	zoom: 85% !important;
+	
+}
+.padding{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.nopadding{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.head-title{
+	padding-left:5%;
+	padding-right: 5%;
+}
+.head-bg-wrap{
+	height: 100%;
+}
+.head-bg{
+	height: 100%;
+	min-height: 600px;
+	background-image: url(../img/creatives_mcojwd.png);
+	background-size: contain;
+	background-color: #1d151d;
+	background-position: 10% bottom;
+	background-repeat: no-repeat;
+}
+.head-bg h1{
+	height: auto;
+	margin-top: 200px;
+	font-size: 24px;
+	color: #fff;
+}
+
+@media (max-width: 1024px){
+	.head-bg{
+		background-size: 200%;
+	}
+}
+@media (max-width: 768px){
+	.head-bg h1{
+		font-size: 18px;
+	}
+	.head-bg{
+
+		background-size: cover;
+	}
+}
+.head-bg h2{
+	line-height: 40px;
+}
+.color-lightgray{
+	color: lightgray;
+}
+.head-title{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.privileges-card .card-item{
+	margin-top: 100px;
+	padding-left: 10%;
+	padding-right:10%;
+}
+.card-item img{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+.bg-21dark{
+	background-color: #212121;
+}
+.img-show{
+	width: 100%;
+}
+.clients-container{
+	height: 700px;
+}
+
+
+.img-container{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	
+}
+.clients-container .img-one{
+	background-image: url(../img/ali-2_axtmqf.png);
+}
+.clients-container .img-two{
+	background-image: url(../img/cosme-1_ou91kl.png);
+}
+.clients-content{
+	padding: 7%;
+}
+.percentnum h5 ,.percentnum p{
+	color: #777777;
+
+}
+.clients-content h5{
+	font-size: 40px;
+}
+.and{
+	color: #000;
+
+}
+.percentnum{
+	padding:20px;
+	display: inline-block;
+}
+.clients-content .title-info{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.clients-content .no-btn{
+	padding:0;
+	text-transform: none;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.heart{
+	color: #e85353;
+	font-family: "futura-bold";
+	position: relative;
+}
+.fa-heart{
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	transform: rotate(30deg);
+}
+.rejoindre-container{
+	padding-left:10%;
+	padding-right: 10%; 
+}
+.rejoindre-container .title-info{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+@media (max-width: 991px){
+	.rejoindre-container{
+	padding-left:0;
+	padding-right:0; 
+}
+}
+.big-number{
+	color: #212121;
+	font-size: 108px;
+	font-family: "bebas-neue";
+}
+.faq{
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.faq-item .item-head{
+	border-bottom: 1px solid lightgray;
+	position: relative;
+	padding: 20px 15px;
+}
+.faq-item h6{
+	font-family: "georgia-book";
+    margin-top: 30px;
+}
+.item-head .plus{
+	cursor:pointer;
+	color: #32CD64;
+	font-family: "futura-light";
+	font-size: 30px;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+
+
+}
+.item-head h4.faq-title{
+	margin: 0;
+	
+	text-align: left;
+}
+.faq-collapse-item{
+	display: none;
+}
+.faq-collapse-item .collapse-body{
+
+	padding: 70px 12%;
+	font-size: 16px;
+	line-height: 28px;
+	color: #212121;
+}
+.up{
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(0,25px);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    ANIMATION-timing-function: ease;  
+    animation-fill-mode: forwards;
+}
+@keyframes floatup{
+	from{transform: translate(0,25px);opacity: 0}
+	to{transform: translate(0,0);opacity:1}
+}
+.card-one{
+	animation-delay: 0.5s;
+}
+.card-two{
+	animation-delay: 1s;
+}
+.card-three{
+	animation-delay: 1.5s;
+}
+.number-one{
+	animation-delay: 0.5s;
+}
+.number-two{
+	animation-delay: 1s;
+}
+.number-three{
+	animation-delay: 1.5s;
+}
+.number-four{
+	animation-delay: 2s;
+}
+.title-info{
+	animation-delay: 1s;
+}
+.head-1{
+	animation-delay: 0.5s;
+}
+.head-2{
+	animation-delay: 1s;
+}
+.head-3{
+	animation-delay: 1.5s;
+}
+.head-4{
+	animation-delay: 2s;
+}
+.head-5{
+	animation-delay: 2.5s;
+}
+.head-6{
+	animation-delay: 3s;
+}
+.head-7{
+	animation-delay: 3.5s;
+}
+.head-8{
+	animation-delay: 4s;
+}
