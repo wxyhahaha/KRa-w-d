@@ -73,7 +73,10 @@ a.green-color{
 .blue-color{
 	color: #469AE0 !important;
 }
-
+.small-btn-green {
+    border: 1px solid #32CD64;
+    color: #32CD64;
+}
 .color-lightgray{
 	color: lightgray;
 }
@@ -87,6 +90,7 @@ a.link-btn{
     letter-spacing: 1px;
     font-size: 18px;
     /*font-family: "futura-book";*/
+    font-family: "futura-bold";
     font-weight: 800;
     text-transform: uppercase;
  }   

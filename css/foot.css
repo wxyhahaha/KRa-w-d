@@ -43,8 +43,27 @@
 	box-shadow: none;
 }
 
-
-
-
-
+.footer-container img {
+    width: 140px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.footer-container .footer-links a, .footer-container{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+}
+.footer-container .footer-links {
+    font-family: "futura-bold";
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    /*color: #777777;*/
+}
+.footer-container .footer-links a:hover{
+    color: lightgray;
+}
 

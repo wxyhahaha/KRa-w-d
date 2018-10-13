@@ -1,6 +1,6 @@
 $(function(){
 	$(window).scroll(function(event){
-		console.log($(window).scrollTop());
+		
 		var h=$(window).scrollTop();
 		function up(obj){
 			$(obj).css('animation-name','floatup');
@@ -73,7 +73,7 @@ $(function(){
 
 	}
 	
-	timer1=setInterval(h1banner,3000);
+	timer1=setInterval(h1banner,2500);
 	$(window).resize(function(event){
 		var windowh=$(window).height();
 		$('.presentation-generale').css('height',windowh+1000);
