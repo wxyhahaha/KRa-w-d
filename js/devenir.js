@@ -8,7 +8,6 @@ $(function(){
 	}
 	up('.head-title');
 	$(window).scroll(function(event) {
-		console.log($(window).scrollTop());
 		var h=$(window).scrollTop();
 		if(h>=200){
 			up('.home-title2');
