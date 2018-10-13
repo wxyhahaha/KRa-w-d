@@ -25,12 +25,12 @@ $(function(){
 		if(h>=1800){
 			up('.home-title3');
 		}
-		if(h>=2000){
+		if(h>=2300){
 			up('.img-one');
 			up('.btn1');
 
 		}
-		if(h>=2500){
+		if(h>=2800){
 			up('.img-two');
 			up('.btn2');
 		}
@@ -58,6 +58,6 @@ $(function(){
 
 	});
 		$('.arrow-dowm').click(function(){
-		$('html,body').animate({scrollTop:'1000px'},800)
+		$('html,body').animate({scrollTop:'750px'},800)
 	})
 })

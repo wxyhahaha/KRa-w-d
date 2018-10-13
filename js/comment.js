@@ -6,7 +6,8 @@ $(function(){
 			$(obj).css('animation-name','floatup');
 		}
 
-		up('.home-title1');
+		
+		up('.phone');
 		if(h>=400){
 			up('.deck1');  
 		}

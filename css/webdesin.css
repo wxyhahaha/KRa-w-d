@@ -1,0 +1,23 @@
+.head-bg{
+	background-image: url(../img/webdesign_wixnlu.png);
+}
+.example-1{
+	background-image: url(../img/prt_480x380_1452704173_2x.png)
+}
+.example-2{
+	background-image: url(../img/cover-audrey-azoura.png)
+}
+.example-3{
+	background-image: url(../img/bnp-webapp_jnmvx8.png)
+}
+.example-4{
+	background-image: url(../img/A.jpg)
+}
+.fa-tablet{
+	font-size: 40px;
+    padding: 0px 10px;
+}
+.fa-mobile{
+	font-size: 30px;
+    padding: 0px 10px;
+}

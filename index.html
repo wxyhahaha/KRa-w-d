@@ -10,10 +10,16 @@
   <link rel="stylesheet" media="all" href="http://d2lzwht9q7lv3h.cloudfront.net/production/assets/application-02f7c62592caedc6e667d2a580d8b52a7c0bcb58d31c9938477fdc2591a1bea9.css">
   
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/foot.css">
   <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js"></script>
+  <script src="js/nav.js"></script>
 </head>
 <body>
+<div class="navdark"></div>
 <nav class="navbar navbar-default wxynav">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,7 +37,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="small-btn small-btn-green">Devenir créa</a></li>
+        <li><a href="html/devenir.html" class="small-btn small-btn-green  ">Devenir créa</a></li>
         <li><a href="#" class="small-btn">
         Connexion</a></li>
 
@@ -45,12 +51,18 @@
       
         
   
-    <div class="col-xs-12 presentation-generale"><div class="col-xs-12 view-more text-center"><a href="" class="link-btn no-btn view-btn green-color "> Voir plus de profils</a>
-        </div>
+    <div class="col-xs-12 presentation-generale">
+      <div class="col-xs-12 view-more text-center">
+        <a href="" class="link-btn no-btn view-btn green-color ">
+         Voir plus de profils
+        </a>
+      </div>
       <!-- 头部背景里的图片，作为header-content的背景 -->
       <div class="header-bg-img">
-        <div class="link-btn phone ">
-          <div class="icon"><i class="fa fa-phone"></i></div>
+        <div class="link-btn phone up">
+          <div class="icon">
+            <i class="fa fa-phone"></i>
+          </div>
           <div class="info">
             <span class="call-us">Nous appeler</span>
             <span class="phone-number">+33 1 76 39 00 49</span>
@@ -93,14 +105,14 @@
                     <div class="col-xs-8 col-xs-offset-2">
                       <h2 class="text-center">Travaillez facilement avec les meilleurs graphistes, designers, rédacteurs, photographes, et productions de vidéos sur tous vos projets.</h2>
                     </div>
-                    <div class="row"></div>
+                    <!-- <div class="row"></div> -->
                     <div class="row-margin-top"></div>
                     <button class="link-btn ">
                       <i></i>
                        Devis instantané
                     </button>
                     <div class="row row-margin-top-small visible-xs"></div>
-                    <a href="#" class="link-btn no-btn green-color">
+                    <a href="html/comment.html" class="link-btn no-btn green-color">
                     Comment ça marche</a>
                     <div class="row row-margin-top-small visible-xs"></div>
                     <button class="link-btn no-btn blue-color">
@@ -272,11 +284,6 @@
       </div>
     </div>
   </div>
-<!--   <div class="distance">
-          <div class="col-xs-12 view-more text-center">
-        <a href="" class="link-btn no-btn view-btn green-color "> Voir plus de profils</a>
-      </div>
-  </div> -->
 <div class="col-xs-12 home-content">
     <div class="col-xs-12 home-content-head text-center">
 
@@ -298,8 +305,8 @@
 
         <ul class="col-xs-12 offre-container">
           <li>
-            <a href="">
-              <div class="col-xs-12 col-md-4 col-sm-5  offre-item">
+            <a href="html/video.html">
+              <div class="col-xs-12 col-md-4 col-sm-5   offre-item">
                 <div class="col-xs-12 box-dark">
                   <h3 class="offre-item-title hover">Vidéo </h3>
                   <p class="offre-item-info hover">
@@ -312,10 +319,10 @@
             
           </li>
           <li>
-            <a href="">
-              <div class="col-xs-12 col-md-4 col-sm-5  offre-item">
+            <a href="html/webdesign.html">
+              <div class="col-xs-12 col-md-4 col-sm-5  offre-item ">
                 <div class="col-xs-12 box-dark">
-                  <h3 class="offre-item-title">Graphisme </h3>
+                  <h3 class="offre-item-title"> Webdesign</h3>
                   <p class="offre-item-info">
                     #illustration #infographie #3D #photomontage #affiche #site
                   </p>
@@ -325,10 +332,10 @@
             </a>
           </li>
           <li>
-           <a href="">
+           <a href="html/identite.html">
               <div class="col-xs-12 col-md-4 col-sm-5  offre-item">
                 <div class="col-xs-12 box-dark">
-                  <h3 class="offre-item-title">Webdesign </h3>
+                  <h3 class="offre-item-title">Identité de marque  </h3>
                   <p class="offre-item-info">
                     #e-commerce #blog #vitrine #email #événementiel #app #plateforme
                   </p>
@@ -338,10 +345,10 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="html/mise_en_page.html">
               <div class="col-xs-12 col-md-4 col-sm-5  offre-item">
                 <div class="col-xs-12 box-dark">
-                  <h3 class="offre-item-title">Identité de marque </h3>
+                  <h3 class="offre-item-title">Mise en Page</h3>
                   <p class="offre-item-info">
                    #logo #typographies #carte de visite #packaging #templates #vêtements
                   </p>
@@ -354,7 +361,7 @@
             <a href="">
               <div class="col-xs-12 col-md-4 col-sm-5  offre-item">
                 <div class="col-xs-12 box-dark">
-                  <h3 class="offre-item-title">Mise en Page </h3>
+                  <h3 class="offre-item-title"> Graphisme</h3>
                   <p class="offre-item-info">
                     #dossier #affiche #flyer #présentation #magazine #livre
                   </p>
@@ -423,7 +430,8 @@
 
 
         <!-- 白色部分 -->
-    <div class="col-xs-12 bg-white padding-30">
+    <div class="col-xs-12 bg-white padding-30" style="
+    overflow:  hidden;">
       <div class="home-section">
         <div class="home-title3 up">
           <h3 class="home-title black Xlarge">Du talent. Un service fiable. Des prix freelance.</h3>
@@ -577,7 +585,7 @@
             <button class="link-btn">Nous appeler</button>
             <div class="clearfix visible-xs"></div>
             <div class="row-margin-top visible-xs visible-sm"></div>
-            <a href="" class="small-btn small-btn-green greencolor">
+            <a href="" class="small-btn small-btn-green green-color">
               
             Notre philosophie
           
@@ -589,14 +597,13 @@
     <div class="col-xs-12 home-section keys">
       <div class="overlay"></div>
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 home-title6 up">
-          <h4 class="home-title small">Key Strategy</h4>
+          <h4 class="home-title small font-book">Key Strategy</h4>
           <div class="row-margin-top"></div>
           <h3 class="home-title">L'outil ultime pour construire une marque forte.</h3>
-          <div class="row-margin-top"></div>
-          <a href="" class="small-btn small-btn-green greencolor">
+          <div class="row-margin-top-40"></div>
+          <a href="" class="small-btn small-btn-green green-color">
         Découvrir</a>
-        </div>
-      
+        </div>   
     </div>
     <!-- 黑色部分 -->
     <footer>

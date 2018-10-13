@@ -1,0 +1,103 @@
+.navdark{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 11111;
+	width: 100%;
+	background: #111111;
+}
+.wxynav{
+	border:none;
+	border-radius: 0;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+}
+
+.wxynav .navbar-brand{
+	padding: 0
+}
+.wxynav .navbar-brand img{
+	transition: 0.2s;
+    height: 43px;
+    width: auto;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+.wxynav .navbar-nav li{
+	padding: 0 0 4px 0;
+}
+.wxynav .navbar-nav li a{
+	padding: 8px 14px 7px;
+	margin-top: 14px;
+    margin-right: 20px;
+    color: white;
+}
+.wxynav .navbar-nav li a:hover{
+	color: #fff;
+
+}
+@media (max-width: 767px){
+	.wxynav .navbar-right{
+	/*width: 100%;*/
+		position: fixed;
+		right: 20px;
+		top: 100px;
+	}
+	.wxynav .navbar-right li a{
+		left: 10px;
+		transition: left 0.5s;\	
+	}
+	.wxynav .navbar-right li:hover a{
+		left: -50px;	
+	}
+}
+
+
+.wxynav .navbar-nav .small-btn-green{
+	border-radius:50px;
+	color: #32CD64;
+	border:1px solid #32CD64;
+}
+.wxynav .navbar-nav a.small-btn-green:hover{
+	color: #32CD64;
+}
+.wxynav .navbar-toggle{
+	border:none;
+	padding: 0;
+	margin-top:20px;
+	margin-right: 45px; 
+}
+.wxynav .navbar-toggle .icon-bar{
+	margin-top: 6px;
+	width: 45px;
+	height: 3px;
+	background: #fff;
+	transition:all 0.5s;
+	animation-delay: 1s;
+	/*position: absolute;*/
+}
+.wxynav .navbar-toggle:hover{
+	background: transparent;
+}
+.wxynav .navbar-toggle .nonewidth{
+	width: 0px;
+}
+.wxynav .navbar-toggle .icon-bar:nth-of-type(2){
+	
+	
+    position: absolute;
+    width: 3px;
+    top: 50%;
+    margin-top: -19px;
+    left: 50%;
+    margin-left: -2px;
+    height: 0px;
+    /*display: none;*/
+}
+.wxynav .navbar-toggle .icon-bar.show-h{
+	height: 45px;
+
+}

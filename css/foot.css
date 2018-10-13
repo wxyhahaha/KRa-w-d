@@ -1,0 +1,50 @@
+.footer{
+	padding: 5%;
+}
+.footer .wxy-footer img{
+	display: block;
+}
+.wxy-footer .title-info{
+	margin: 0;
+	line-height: 30px;
+}
+.footer b{
+	font-family: "futura-light";
+	font-size: 14px;
+	font-weight: lighter;
+	color: #777777;
+	display: block;
+	text-align: left;
+	line-height: 90px;
+	letter-spacing: 2px;
+}
+
+.sicon i{
+	font-size: 16px;
+	color:#212121;
+	background-color: #fff;
+	padding: 15px;
+}
+.footer .rights{
+	margin-top: 50px;
+}
+
+
+
+.nonewidth{
+	width: 0;
+}
+
+
+
+.black-noborder-shadow{
+	background: #111111;
+	border:none;
+	box-shadow: none;
+}
+
+
+
+
+
+

@@ -5,6 +5,7 @@ $(function(){
 		function up(obj){
 			$(obj).css('animation-name','floatup');
 		}
+		up('.phone');
 		if(h>=400){
 			up('.home-title1');
 		}
@@ -49,28 +50,6 @@ $(function(){
 			up('.home-title6');
 		}
 	})
-	$('.wxynav .navbar-toggle').click(function(){
-		$(this).css('background', 'transparent')
-		var h=$(window).height();
-		console.log(h);
-		$('.wxynav .navbar-collapse').css(
-			{height: h,boxShadow:' none',border:'none',background: '#111111'}
-			);
-		
-
-		$('.icon-bar').eq(1).toggleClass('shrink');
-
-		$('.icon-bar').eq(3).toggleClass('nonewidth');
-		
-		$('.wxynav .container-fluid').toggleClass('black-noborder-shadow');
-		setTimeout(function(){
-			$('.icon-bar').eq(0).toggleClass('show-h');
-		}, 100)
-		setTimeout(function(){
-			$('.icon-bar').eq(2).toggleClass('rotate');
-			$('.icon-bar').eq(0).toggleClass('rotate');
-		}, 500);
-	})
 	$('.bg-element-1').addClass('bg-element-one');
 	$('.bg-element-2').addClass('bg-element-two');
 	$('.bg-element-3').addClass('bg-element-three');
@@ -80,21 +59,30 @@ $(function(){
 
 	// 标题的轮播
 	var num=0;
-	
+	var timer1;
 
-	function prizebanner(){
+	function h1banner(){
 		num++;		
 		if(num>6){
 			$('.h1banner ul').css('top',0);
 			num=1;  
 		}
 		// console.log(num);
-		$('.h1banner ul').animate({top:-73*num+'px'},2000);
+		$('.h1banner ul').animate({top:-73*num+'px'},1000);
+		
+
 	}
-	setInterval(prizebanner,3000);
+	
+	timer1=setInterval(h1banner,3000);
 	$(window).resize(function(event){
 		var windowh=$(window).height();
 		$('.presentation-generale').css('height',windowh+1000);
 	})
-
+	var num1=0;
+	var timer2;
+	function logo_banner(){
+		
+		$('.logo-banner').css('left',++num1/100+'px');
+	}
+	timer2=setInterval(logo_banner,6);
 })
