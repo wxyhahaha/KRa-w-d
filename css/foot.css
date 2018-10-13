@@ -49,7 +49,7 @@
     margin-left: 0;
     margin-bottom: 15px;
 }
-.footer-container .footer-links a, .footer-container{
+.footer-container .footer-links a{
     color: white;
     display: block;
     text-transform: uppercase;
