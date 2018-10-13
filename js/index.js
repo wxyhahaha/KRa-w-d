@@ -78,11 +78,11 @@ $(function(){
 		var windowh=$(window).height();
 		$('.presentation-generale').css('height',windowh+1000);
 	})
-	var num1=0;
-	var timer2;
-	function logo_banner(){
+	// var num1=0;
+	// var timer2;
+	// function logo_banner(){
 		
-		$('.logo-banner').css('left',++num1/100+'px');
-	}
-	timer2=setInterval(logo_banner,6);
+	// 	$('.logo-banner').css('left',++num1+'px');
+	// }.
+	// timer2=setInterval(logo_banner,6);
 })
