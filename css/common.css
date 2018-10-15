@@ -4,6 +4,10 @@
 
     /*line-height: 1.4;*/
 }
+body{
+	zoom: 85% !important;
+	background: #fafafa	;
+}
 a:hover{
 	color: #32CD64;
 	text-decoration: none;
@@ -22,6 +26,9 @@ a.link-btn:hover{
 	background-color: #111111;
 }
 a.green-color{
+	color: #32CD64;
+}
+a.green-color:hover{
 	color: #32CD64;
 }
 .small-btn{    
@@ -52,7 +59,7 @@ a.green-color{
 	border:none;
 	background-color: #32CD64;
     color: white;
-	padding: 14px 60px;
+	padding: 1.5% 2.5%;
     /*margin-right: 5px;*/
     border-radius: 50px;
     text-transform: uppercase;
@@ -80,6 +87,9 @@ a.green-color{
 .color-lightgray{
 	color: lightgray;
 }
+.title-info.color-lightgray{
+	color: lightgray;
+}
 a.link-btn{
 	text-decoration: none;
 }
@@ -102,12 +112,22 @@ a.link-btn{
 	    line-height: 30px;
 	    margin-top: 10px;
 	}
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 767px){
 	.home-title {
     font-size: 14px;  
 }
 	.title-info{	    
 	    font-size: 12px;   
+	}
+}
+@media (max-width: 1024px){
+	.head-bg h1{
+		font-size: 30px;
+	}
+}
+@media (max-width: 767px){
+	.head-bg h1{
+		font-size:22px;
 	}
 }
 .up{
@@ -151,7 +171,9 @@ a.link-btn{
 .gray{
 	color: #777777;	
 }
-
+.blod{
+	font-weight: bolder;
+}
 .small{
 	font-weight: lighter;
 	font-size: small;
@@ -188,54 +210,101 @@ a.link-btn{
 	position:absolute;
 	top: 0;
 	left: 50px;
-	width: 170PX;
-	height: 50px;
+	width: 155PX;
+	height: 40px;
+	padding: 0 5px;
 }
 .info span{
-	font-size: 14px;
-	position: absolute;
+	font-size: 12px;
+	/*position: absolute;*/
+	display: block;
+	text-align: left;
 }
 .info .call-us{
-	top: 5px;
-    left: 10px;
+	line-height: 23px;
+	transform: translate(-10px,10px);
+	transition: all 0.5s;
 }
 .info .phone-number{
-	top: 28px;
-    left: 5px;
+	line-height: 16px;
+	transform: translate(0,10px);
+	transition: all 0.5s;
+	opacity: 0;
 }
 .icon{
 	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: -1px;
-	top: -1px;
+	width: 45px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
 	background-color:  rgba(0,0,0,0.2);
 	border-radius: 50px 0 0 50px;
+	opacity: 0;
+	transition: all 0.5s;
 }
 .phone .fa-phone{
-	font-size: 25px;
+	font-size: 20px;
 	position: absolute;
 	left: 50%;
 	top:50%;
 	margin-left: -8px;
 	margin-top: -10px;
-
+	transform: translate(-37px,0);
+	transition: all 0.5s;
 }
 .phone{
-	width: 220px;
-	height: 50px;
+	width: 200px;
+	height: 40px;
 	z-index: 333;
-	position: absolute;
-	bottom: 100px;
+	position: fixed;
+	bottom: 20px;
 	left: 20px;
 	transition: all 1s ease;
 	cursor: pointer;
 }
+.phone:hover .icon{
+	opacity: 1;
+}
+.phone:hover .info span,.phone:hover .fa-phone{
+	transform: translate(0,0);
+	opacity: 1;
+}
+
 @media (max-width:767px ){
+
 	.phone{
+		width: 180px;
+		height: 35px;
 		bottom: 20px;
 		left: 20px;
-		position: fixed;
+		position: absolute;
+	}
+	.phone .fa-phone{
+		font-size: 20px;
+	}
+	.info span{
+		font-size: 11px;
+	}
+	.icon{
+		position: absolute;
+		width: 40px;
+		height: 35px;
+	}
+	.info {
+		width: 140PX;
+		height: 35px;
+		padding: 0;
+	}
+	.info .call-us{
+		line-height: 20px;
+		transform: translate(-15px,10px);
+	}
+	.info .phone-number{
+		line-height: 16px;
+		transform: translate(0,10px);
+	}
+	.phone:hover .info span{
+		transform: translate(-5px,0);
 	}
 }
 .shrink{

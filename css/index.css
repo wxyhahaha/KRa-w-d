@@ -4,12 +4,12 @@
 	padding-left: 0;
 	padding-right: 0px;
 }
-
-
-
 .below-navbar{
 	padding-right: 0;
 	padding-left: 0;
+}
+a.green-color:hover{
+	color: #32CD64;
 }
 .bg-dark{
 	height: 165%;
@@ -19,7 +19,8 @@
 }
 .presentation-generale{
 	/*height: 1300px;*/
-	min-height: 1600px;
+	min-height: 1300px;
+	max-height: 1600px;
 	/*overflow: hidden;*/
 	background-color: #FAFAFA;
 	position: relative;
@@ -151,8 +152,9 @@
 
 
 .head-title h1{
-	height: 73px;
+	height: 60px;
 	overflow: hidden;
+
 	
 }
 
@@ -171,15 +173,27 @@
     text-transform: uppercase;
     /*letter-spacing: 2px;*/
 }
-
-.head-title ul li{
-	margin: 30px 0 30px 0;
+@media (max-width: 1024px){
+	.head-title ul{
+		font-size: 30px;
+	}
 }
+@media (max-width: 767px){
+	.head-title ul{
+		font-size:22px;
+	}
+}
+.head-title ul li{
+	height: 60px;	
+	line-height: 60px;
+}
+
 .header-content h2{
 	letter-spacing: 1px;
 	color:lightgray;
-	font-size: 17px;
-	line-height:40px;
+	font-size: 16px;
+	line-height:35px;
+	padding: 0 2%;
 }
 /*.row{
 	height: 105px;
@@ -197,8 +211,8 @@
 	position: relative;
 	clear: both;
     /*padding-top: 35px;*/
-	padding-left: 5%;
-	padding-right: 5%;
+/*	padding-left: 5%;
+	padding-right: 5%;*/
 }
 @media screen and (max-width: 991px) {
 	.creatives-container{
@@ -207,8 +221,11 @@
 	}
 }
 .creative-slide{
-	width: 100%;
+	width: 105%;
 	overflow: scroll;
+}
+.creative-cards{
+	padding: 5% 15% 0 10%;
 }
 .creative-cards .col-xs-3{
 	/*height: 700px;*/
@@ -270,6 +287,9 @@ h5.card-title{
 	.creative-cards{
 	width: 1024px;
 	}
+	.creative-cards {
+    padding: 5% 0 0 10%;
+}
 }
 
 .project-image{
@@ -401,8 +421,17 @@ h5.card-title{
 	width: 100%;
 	height: 1300px;
 }
+@media screen and (max-width: 767px){
+	.home-section {
+	    padding: 13% 2%;
+	}
+
+}
+
 .home-content-head{
-	padding: 2%;
+	/*padding: 2%;*/
+	position: relative;
+	z-index: 3;
 	background: #fff;
 	border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8; 
@@ -512,10 +541,11 @@ ul{
 	background-image: url(../img/graphisme_m9nago.webp);
 }
 .offre-item-title{
-	font-family: "futura-bold";
+	/*font-family: "futura-bold";*/
     text-transform: uppercase;
-    /*font-weight: 800;*/
+    font-weight: 800;
     letter-spacing: 3px;
+    font-size: 22px;
     color: white;
 	width: 100%;
 	z-index: 2;
@@ -528,7 +558,7 @@ ul{
 	width: 80%;
 	z-index: 2;
 	opacity: 0;
-	bottom: 50px;
+	top: 180px;
 	position: absolute;
 	margin-left: 10%;
 	font-size: 16px;
@@ -587,6 +617,7 @@ ul{
 .home-foot  .fa{
 	font-size: 60px;
 	margin: 80px 0 10px;
+
 }
 
 .foot-item-title{
@@ -660,6 +691,11 @@ ul{
 .Ils-item{
 	padding: 60px 40px 0 40px;
 }
+@media screen and (max-width: 400px){
+	.Ils-item {
+    padding: 0;
+	}
+}
 .Ils-item:nth-of-type(1){
 	animation-delay: 0.5s;
 }
@@ -682,7 +718,7 @@ ul{
 h5.Ils-title{
 	margin-top: 40px;
 	margin-bottom: 15px;
-	color:lightgray;
+	color:#777777;
 	margin-left: 15px;
 	width: calc(80% - 15px);
 	float: right;
@@ -692,7 +728,7 @@ h5.Ils-title{
 
 }
 .Ils-title b{
-	color: lightgray;
+	color: #7777777;
 	font-family: "futura-bold";
 }
 .Ils-people img{
@@ -727,7 +763,16 @@ h5.Ils-title{
 .we-care-content{
 	margin-top: 100px;
 }
-
+.we-care-content .phone{
+	position: static;
+	transition: all 1s ease;
+	cursor: pointer;
+	display: inline-block;
+}
+.we-care-content .small-btn.small-btn-green{
+	display: inline-block;
+    vertical-align: top;
+}
 .keys{
     padding: 6% 2%;
 	background-image: url(../img/keys_gydsco.png);

@@ -11,7 +11,6 @@ body,html,section{
 .head-bg{
 	height: 100%;
 	min-height: 600px;
-	background-image: url(../img/video_j7dbf8.gif);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -32,6 +31,16 @@ body,html,section{
 	font-size: 40px;
 	color: #fff;
 	overflow: inherit;
+}
+@media (max-width: 1024px){
+	.head-bg h1{
+		font-size: 30px;
+	}
+}
+@media (max-width: 767px){
+	.head-bg h1{
+		font-size:22px;
+	}
 }
 .fa{
 	font-size: 55px;
@@ -66,6 +75,11 @@ body,html,section{
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 18px;
+}
+.title-info .style-normal{
+	color: #777777;
+	font-weight: 800;
+	font-style: normal;
 }
 .title-info .fa{
 	font-size: 60px;

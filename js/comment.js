@@ -1,13 +1,19 @@
 $(function(){
+	function up(obj){
+			$(obj).css('animation-name','floatup');
+		}
+	up('.title-h1');
+	up('.title-info-h2');
+	up('.phone');
 	$(window).scroll(function(event){
 		console.log($(window).scrollTop());
 		var h=$(window).scrollTop();
-		function up(obj){
-			$(obj).css('animation-name','floatup');
-		}
-
 		
-		up('.phone');
+
+
+		if(h>=300){
+			up('.home-title1');  
+		}
 		if(h>=400){
 			up('.deck1');  
 		}

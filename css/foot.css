@@ -54,12 +54,13 @@
     display: block;
     text-transform: uppercase;
 }
-.footer-container .footer-links {
-    font-family: "futura-bold";
+.footer-container .footer-links a{
+    /*font-family: "futura-bold";*/
     text-transform: uppercase;
     line-height: 50px;
     font-size: 14px;
     color: white;
+    font-weight: 800;
     text-align: left;
     /*color: #777777;*/
 }
