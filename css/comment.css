@@ -109,8 +109,7 @@ body,html{
 	}
 }
 .cards img{
-	width: 414px;
-	height: 300px;
+width: 100%;
 }
 .title-info b{
 	font-size: 20px;

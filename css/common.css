@@ -8,6 +8,9 @@ body{
 	zoom: 85% !important;
 	background: #fafafa	;
 }
+ul{
+	list-style: none;
+}
 a:hover{
 	color: #32CD64;
 	text-decoration: none;
@@ -30,6 +33,9 @@ a.green-color{
 }
 a.green-color:hover{
 	color: #32CD64;
+}
+.green{
+	color: #32CD64
 }
 .small-btn{    
 	font-family: "futura-book";
@@ -59,7 +65,7 @@ a.green-color:hover{
 	border:none;
 	background-color: #32CD64;
     color: white;
-	padding: 1.5% 2.5%;
+	padding: 18px 22px 18px 25px;
     /*margin-right: 5px;*/
     border-radius: 50px;
     text-transform: uppercase;
@@ -67,6 +73,11 @@ a.green-color:hover{
     font-size: 11px;
     letter-spacing: 2px;
     
+}
+@media(max-width: 767px){
+	.link-btn{
+		padding: 12px 17px 12px 20px;
+	}
 }
 .link-btn.no-btn{
 	
@@ -79,6 +90,9 @@ a.green-color:hover{
 }
 .blue-color{
 	color: #469AE0 !important;
+}
+.blue{
+	color: #469AE0;
 }
 .small-btn-green {
     border: 1px solid #32CD64;
@@ -261,6 +275,7 @@ a.link-btn{
 	left: 20px;
 	transition: all 1s ease;
 	cursor: pointer;
+	padding: 0;
 }
 .phone:hover .icon{
 	opacity: 1;
@@ -278,6 +293,7 @@ a.link-btn{
 		bottom: 20px;
 		left: 20px;
 		position: absolute;
+		padding: 0;
 	}
 	.phone .fa-phone{
 		font-size: 20px;
