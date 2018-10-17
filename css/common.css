@@ -323,9 +323,3 @@ a.link-btn{
 		transform: translate(-5px,0);
 	}
 }
-.shrink{
-	transform: scale(0);
-}
-.rotate{
-	transform: rotate(45deg);
-}

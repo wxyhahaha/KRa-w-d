@@ -44,6 +44,9 @@ a.green-color:hover{
 	transition: cubic-bezier(0.07, 0.73, 0.31, 0.99) 2.5s;
 	transform: translate3d(0px, 300px, 0px) rotate(0deg);
 }
+@keyframes bg_element_up{
+	
+}
 .element-img{
 
 	
@@ -52,23 +55,13 @@ a.green-color:hover{
     background-repeat: no-repeat;
     
 }
-.col-xs-3.col-md-3{
-	padding-left: 0;
-	padding-right: 0;
-}
 
-.mask{
-	top: 0;
-	position: absolute;
-	width: 100%;
-	height: 600px;
-	opacity: 0.3;
-	background: linear-gradient(to bottom, #1A1926 20%, #111 50%);
-}
 .bg-element-one{
 	opacity: 1;
 	transform: translate3d(0px, 0px, 0px) rotate(15deg);
+
 }
+
 .bg-element-two{
 	opacity: 1;
 	transform: translate3d(0px, 0px, 0px) rotate(-20deg);
@@ -135,6 +128,19 @@ a.green-color:hover{
     height: 18vw;
     background-image: url(../img/15.png);
     
+}
+.col-xs-3.col-md-3{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.mask{
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	opacity: 0.3;
+	background: linear-gradient(to bottom, #1A1926 20%, #111 50%);
 }
 .header-content{
 	height: 100%;
@@ -655,14 +661,28 @@ ul{
 	color: #777777;
 	line-height: 30px;
 }
-
+.banner-container{
+	width: 6480px;
+	height: 280px;
+	position: relative;
+	margin-left: -30px;
+	/*animation:bannermove 80s infinite;*/
+}
+@keyframes bannermove{
+	0%{left: 0}
+	50%{left: -5000px}
+	100%{left: 0}
+}
 .logo-banner{
+	/*border:1px solid ;*/
     height: 250px;
-    width:2000px;
+    width:3240px;
+    /*width: 600px;*/
+    float: left;
      margin-right: 0;
      position: relative;
     /*width: calc(100% + 60px);*/
-    margin-left: -80px;
+    margin-left: -100px;
    
     padding-bottom: 30px;
     background-image: url(../img/ref-logos_wsqtgu.png);

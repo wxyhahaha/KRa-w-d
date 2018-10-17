@@ -1,3 +1,6 @@
+body{
+	background-color: #f5f5f5;
+}
 .navdark{
 	display: none;
 	position: fixed;
@@ -48,7 +51,7 @@
 	}
 	.wxynav .navbar-right li a{
 		left: 10px;
-		transition: left 0.5s;\	
+		transition: left 0.5s;\
 	}
 	.wxynav .navbar-right li:hover a{
 		left: -50px;	
@@ -63,6 +66,10 @@
 }
 .wxynav .navbar-nav a.small-btn-green:hover{
 	color: #32CD64;
+	
+}
+.wxynav .navbar-nav a:hover{
+	background-color: transparent;
 }
 .wxynav .navbar-toggle{
 	border:none;
@@ -100,4 +107,20 @@
 .wxynav .navbar-toggle .icon-bar.show-h{
 	height: 35px;
 
+}
+.shrink{
+	transform: scale(0);
+}
+.rotate{
+	transform: rotate(45deg);
+}
+.small-btn-gray{
+	color: #212121;
+}
+.wxynav .navbar-nav li .small-btn-gray{
+	color: #212121;
+	border:none;
+}
+.small-btn-gray:hover{
+	color: #212121 !important;
 }
