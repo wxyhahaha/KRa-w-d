@@ -51,25 +51,28 @@ $(function(){
 			up('.home-title6');
 		}
 	})
-	$('.bg-element-1').addClass('bg-element-one');
-	$('.bg-element-2').addClass('bg-element-two');
-	$('.bg-element-3').addClass('bg-element-three');
-	$('.bg-element-4').addClass('bg-element-four');
-	$('.bg-element-5').addClass('bg-element-five');
+	setTimeout(function(){
+		$('.bg-element-1').addClass('bg-element-one');
+		$('.bg-element-2').addClass('bg-element-two');
+		$('.bg-element-3').addClass('bg-element-three');
+		$('.bg-element-4').addClass('bg-element-four');
+		$('.bg-element-5').addClass('bg-element-five');
+	},2500)
+
 
 
 	// 标题的轮播
-	var num=0;
+	var num1=0;
 	var timer1;
 
 	function h1banner(){
-		num++;		
-		if(num>6){
+		num1++;		
+		if(num1>6){
 			$('.h1banner ul').css('top',0);
-			num=1;  
+			num1=1;  
 		}
 		// console.log(num);
-		$('.h1banner ul').animate({top:-60*num+'px'},1000);
+		$('.h1banner ul').animate({top:-60*num1+'px'},1000);
 		
 		timer1=setTimeout(h1banner,2500);
 	}
@@ -79,13 +82,18 @@ $(function(){
 		var windowh=$(window).height();
 		$('.presentation-generale').css('height',windowh+1000);
 	})
-	// var num1=0;
-	// var timer2;
-	// function logo_banner(){
-		
-	// 	$('.logo-banner').css('left',++num1+'px');
-	// }.
-	// timer2=setInterval(logo_banner,6);
+
+	var timer2;
+	console.log($('.banner-container').offset().left)
+	function logo_banner(){
+		console.log(-$('.banner-container').offset().left)
+		if(-$('.banner-container').offset().left>3140){
+			$('.banner-container').css({left:0})
+		}
+
+		$('.banner-container').css({left:$('.banner-container').offset().left-1+'px'})
+	}
+	timer2=setInterval(logo_banner,30);
 	$(window).resize(function(event) {
 		var w=$(window).width();
 		// console.log(w);
@@ -93,7 +101,22 @@ $(function(){
 			$('.phone').css('animation-name','none');
 			setTimeout(function(){
 			$('.phone').css('animation-name','floatup');
-			},20)
+			},20);
 		}
+		if(w<=992){
+			$('.bg-element-1').css({bottom:'32%'})
+			$('.bg-element-2').css({bottom:'37%',right:'6%'})
+			$('.bg-element-3').css({bottom:'12%'})
+			$('.bg-element-4').css({bottom:'12%'})
+			$('.bg-element-5').css({bottom:'41%',left:'5%'})
+		}
+		else{
+			$('.bg-element-1').css({bottom:'24%'})
+			$('.bg-element-2').css({bottom:'29%',right:'4%'})
+			$('.bg-element-3').css({bottom:'5%'})
+			$('.bg-element-4').css({bottom:'-4%'})
+			$('.bg-element-5').css({bottom:'38%',left:'0%'})
+		}
+		
 	});
 })
