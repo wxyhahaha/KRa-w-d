@@ -84,7 +84,6 @@ $(function(){
 	})
 
 	var timer2;
-	console.log($('.banner-container').offset().left)
 	function logo_banner(){
 		console.log(-$('.banner-container').offset().left)
 		if(-$('.banner-container').offset().left>3140){
